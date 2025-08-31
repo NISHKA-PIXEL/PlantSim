@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantSim - Predict Plant Health</title>
+  <link rel="stylesheet" href="style.css" />
+   <py-script src="predict.py"></py-script> 
+  <!-- Google Model Viewer for AR -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+<!-- for help chatbot -->
+<script type="text/javascript">function add_chatinline(){var hccid=88770759;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+add_chatinline();</script>
+<header>
+  <div class="hero-content">
+    <h1>🌱 PlantSim</h1>
+    <h2>A Digital Twin App for Smarter Farming</h2>
+    <p>🚜 Predict plant health with <b>AI & AR</b> – stop diseases <u>before</u> they spread and save up to <b>30% crops</b>!</p>
+    <a href="#upload" class="btn">🌿 Try It Now</a>
+  </div>
+</header>
+
+
+<nav>
+  <a href="#problem">Problem</a>
+  <a href="#solution">Solution</a>
+  <a href="#features">Features</a>
+  <a href="#ar">AR Mockup</a>
+  <a href="#demo">Demo</a>
+  <a href="#upload">Check Plant</a>
+  <a href="#contact">Contact</a>
+  <a href="#upcoming-features"></a>
+</nav>
+
+<section id="problem" class="problem-section">
+  <h2>🌾 The Problem</h2>
+  <div class="text-image-row">
+    <div class="text-col">
+      <p>
+        Farmers often <b>detect crop diseases too late</b>, leading to up to 
+        <span class="highlight">30% yield loss</span>.  
+        Current apps only identify diseases <i>after they appear</i> — when 
+        damage has already begun.
+      </p>
+      <ul class="problem-points">
+        <li>❌ Late detection increases crop loss</li>
+        <li>❌ Limited awareness about early warning tools</li>
+        <li>❌ Heavy reliance on manual inspection</li>
+      </ul>
+    </div>
+    <div class="image-col">
+      <img src="prblm1.jpg" alt="Farmer facing crop problem"/>
+    </div>
+  </div>
+</section>
+
+<!-- Solution Section -->
+<section id="solution" class="solution-section">
+  <h2>🚀 Our Solution</h2>
+  <div class="text-image-row">
+    
+    <div class="text-col">
+      <p>
+        We combine <b>Digital Twin</b>, <b>AI</b>, and <b>AR overlays</b> to 
+        <span class="highlight">predict plant diseases and nutrient issues 
+        before they occur</span> — saving crops, time, and money for farmers.
+      </p>
+      <ul class="solution-points">
+        <li>🌱 Early disease prediction with AI</li>
+        <li>🛰️ Digital Twin model for crop health monitoring</li>
+        <li>📱 AR overlay for real-time visualization</li>
+        <li>💡 Actionable recommendations to farmers</li>
+      </ul>
+    </div>
+
+    <div class="image-col">
+      <img src="solution.jpg" alt="Digital Twin AI Solution"/>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section id="features" class="features-section">
+  <h2>🌟 Main Features</h2>
+  <div class="features-grid">
+
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/4105/4105448.png" alt="AI Disease Detection">
+      <h3>AI Disease Detection</h3>
+      <p>Identify crop diseases early with advanced AI models trained on real crop data.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Nutrient Prediction">
+      <h3>Nutrient Prediction</h3>
+      <p>Get accurate insights into soil nutrient levels and plant nutrition needs.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1598/1598195.png" alt="AR Overlay">
+      <h3>AR Overlay</h3>
+      <p>Visualize plant health and growth issues in real time with AR overlays.</p>
+    </div>
+
+    <div class="feature-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2950/2950628.png" alt="Community Learning">
+      <h3>Community Learning</h3>
+      <p>Connect with other farmers, share experiences, and learn best practices together.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AR Mockup Section -->
+<section id="ar" class="ar-section">
+  <h2>📱 AR Mockup – Track Recovery Progress</h2>
+  <div class="ar-box">
+    <img src="ar.jpg" alt="AR Mockup" class="ar-image">
+    <p class="ar-caption">This mockup shows how farmers can visualize crop recovery in Augmented Reality, with progress displayed in real-time (%).</p>
+  </div>
+  <p class="note">💡 Try it on a mobile device with AR support (Chrome/Android or Safari/iOS).</p>
+</section>
+
+<!-- Demo Video Section -->
+<section id="demo" class="demo-section">
+  <h2>🎥 Demo Video</h2>
+  <div class="video-container">
+    <video controls>
+      <source src="AI Helping Farmers  Detect Plant Diseases.mp4" type="video/mp4">
+      <source src="video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <p class="video-caption">Watch how our AI + AR solution helps farmers detect plant diseases early and protect their crops.</p>
+</section>
+
+
+<!-- Upload -->
+<section id="upload">
+  <h2>🚜 "Upload a Photo, Get Instant Crop Health Report"</h2>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="plant_image" accept="image/*" required />
+    <button type="submit">Check Health</button>
+  </form>
+  <div id="result"></div>
+</section>
+   <!-- How It Works -->
+<section id="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Upload Image">
+      <p>📸 Upload a crop image</p>
+    </div>
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="AI Analysis">
+      <p>🤖 AI analyzes health</p>
+    </div>
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/3813/3813357.png" alt="Get Results">
+      <p>🌱 Get instant results + tips</p>
+    </div>
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/3711/3711169.png" alt="Farmer Action">
+      <p>🚜 Take action to protect crops</p>
+    </div>
+  </div>
+</section>
+
+<!-- Impact Section -->
+<section id="impact">
+  <h2>Our Impact</h2>
+  <div class="impact-stats">
+    <div class="stat">
+      <h3>30%</h3>
+      <p>Average crop loss prevented</p>
+    </div>
+    <div class="stat">
+      <h3>95%</h3>
+      <p>AI Accuracy in wheat & rice detection</p>
+    </div>
+    <div class="stat">
+      <h3>500+</h3>
+      <p>Farmers already benefiting</p>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section id="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-members">
+    <div class="member">
+      <h3>Nishka</h3>
+      <p>Team Leader</p>
+    </div>
+    <div class="member">
+      <h3>Nitin Shrivastav</h3>
+      <p>Core Member</p>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Features Section -->
+<section id="upcoming-features" class="features">
+  <h2>🚀 Upcoming Features</h2>
+  <div class="feature-list">
+    <div class="feature-card">
+      <h3>🌱 Multi-Crop Support</h3>
+      <p>Upload leaves of maize, sugarcane, and more crops for instant disease prediction.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>📱 Mobile App</h3>
+      <p>PlantSim Android & iOS app for farmers to predict crop health offline.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🛰️ Satellite Insights</h3>
+      <p>Get real-time farm monitoring using satellite + drone data.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🤖 Voice Assistant</h3>
+      <p>Ask PlantSim in your local language and get instant solutions.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <h2>📩 Contact Us</h2>
+  <p>Got a question or feedback? 💬</p>
+  <p>
+    Use the chatbot in the bottom-right corner to leave us a message anytime.
+  </p>
+
+  <div class="contact-highlights">
+    <div class="contact-card">
+      <h3>💡 Quick Help</h3>
+      <p>Ask the chatbot about crop prediction, features, or troubleshooting.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>📝 Feedback</h3>
+      <p>Share your thoughts directly through the chatbot – we love hearing from you!</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>📧 Email (Backup)</h3>
+      <p>If you prefer, reach us at <a href="mailto:support@plantsim.com">support@plantsim.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>🌱 Digital Twin</h3>
+    <p>AI-powered crop disease prediction for Rice & Wheat.</p>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Digital Twin | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="js.js"></script>
+<!--Chat button will appear here-->
+<div id="MyLiveChatContainer"></div>
+
+
+
+</body>
+</html>
