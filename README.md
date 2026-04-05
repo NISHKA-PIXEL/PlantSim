@@ -2,7 +2,7 @@
 AI-powered app that creates a digital twin of plants, predicts future health risks, and shows early warnings with AR
 # 🌱 PlantSim – AI Digital Twin of a Plant  
 
-## 📌 Project Description  
+##  Project Description  
 PlantSim is an AI-powered app that creates a **digital twin of plants** using photos, weather, and soil data.  
 Unlike normal plant apps that only detect problems after they appear, PlantSim can **predict future risks** such as nutrient deficiency, fungal attack, or drought stress.  
 With **AR overlays**, farmers can point their camera at the plant and see the areas most at risk, along with simple care tips.  
