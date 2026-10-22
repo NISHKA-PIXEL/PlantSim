@@ -1,6 +1,6 @@
 document.getElementById("uploadForm").addEventListener("submit", function (e) {
     e.preventDefault();
-
+//nishka
     // Crop options
 
     //
