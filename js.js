@@ -2,6 +2,8 @@ document.getElementById("uploadForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     // Crop options
+
+    //
     let crops = ["Rice 🌾", "Wheat 🌾"];
     let crop = crops[Math.floor(Math.random() * crops.length)];
 
