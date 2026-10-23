@@ -1,10 +1,10 @@
 document.getElementById("uploadForm").addEventListener("submit", function (e) {
     e.preventDefault();
-//nishka
+
     // Crop options
 
     //
-    let crops = ["Rice 🌾", "Wheat 🌾"];
+    let crops = ["Rice", "Wheat"];
     let crop = crops[Math.floor(Math.random() * crops.length)];
 
     let disease = "";
@@ -25,8 +25,8 @@ document.getElementById("uploadForm").addEventListener("submit", function (e) {
     // Show result
     document.getElementById("result").innerHTML = `
         <h3>Prediction Result:</h3>
-        🌱 <b>Crop:</b> ${crop} <br>
-        🦠 <b>Disease:</b> ${disease} <br>
-        💧 <b>Nutrient Status:</b> ${nutrient}
+        <b>Crop:</b> ${crop} <br>
+        <b>Disease:</b> ${disease} <br>
+        <b>Nutrient Status:</b> ${nutrient}
     `;
 });
